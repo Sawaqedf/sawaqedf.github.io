@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farid Sawaqed - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d60e8f2315.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Montclair Staue University Graduate</p>
+                <h1>Hi, I'm <span>Farid Sawaqed</span><br>Resident of Clifton NJ</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/User.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Farid Sawaqed, but you can call me Fred. I grew up loving 
+                    mathematics and illustration and after obtaining my bachelor's degree in Pure Mathematics, 
+                    I found a way to professionally use my love of art and math together, through Game 
+                    Development. After self learning the basics of Unity and C#, I instantly fell in 
+                    love with programming and computers in general. So I applied for the Game Development
+                    Certificate, became a Computer Science major, and gave myself the goal to learn more 
+                    about computers. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="hobbies">
+                        <ul>
+                            <div class="about-column-3">
+                                <div class="hobby-column">
+                                    <h1 class="hobby-title">Drawing</h1>
+                                    <p>Traditional comic art illustrations</p>
+                                    <img src="Images/hobby-1.jpg">
+                                </div>
+
+                                <div class="hobby-column">
+                                    <h2 class="hobby-title">Blender</h2>
+                                    <p>Creating blender meshas and animations</p>
+                                    <a href="https://youtu.be/ICT4nEJDKUk"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Computer</span><br>Microsoft Office (Word, Excel, PowerPoint), Unreal Engine, Unity, Java, Python, C#, C++, Figma, GDScript, Android Studio</li>
+                            <li><span>Languages</span><br>Arabic (native), English (advanced), Spanish (intermediate)</li>
+                            <li><span>Training and Certifications</span><br>HSR – Students / Faculty Basic Course, RCR For Students</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 3, 2024 – Current</span><br>Graduate Research Assistant</li>
+                            <li><span>September 5, 2023 – May 7, 2024</span><br>Game Development Certificate Teaching Assistant</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>May 2025</span><br>Computer Science Master's degree at Montclair State University</li>
+                            <li><span>May 2024</span><br>Game Development certificate at Montclair State University</li>
+                            <li><span>Expected May 2025</span><br>Pure Mathematics Degree at Montclair State University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Development</h2>
+                    <p>Created multiple game projects across different platforms, including a Virtual Reality game using 
+                    Unreal Engine(Blueprints, C++) as a group with me set as the leader, a 2D game in Unity(C#), 
+                    and a 2D game in Godot(GDScript). Showed proficiency in game mechanics, level design, optimization, 
+                    and leadership while utilizing each engine's unique features to create immersive and engaging experiences</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>UI Design</h2>
+                    <p>Designed a fully interactive mobile application prototype using Figma, 
+                    incorporating user-centered design principles and providing a seamless experience 
+                    for mobile interfaces</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio----------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.jpeg">
+                    <div class="layer">
+                        <h3>Unity 2D Game</h3>
+                        <p>A game made as part of my final project for intro to Artificial Intelligence. 
+                        For this project, I had to create a fully functioning villians that change behavious 
+                        depending on the state of the game</p>
+                        <a href="https://www.linkedin.com/posts/faridsawaqed-06s_reflecting-on-this-recent-semester-ive-activity-7280266487196516353-OeZU?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdrRBIBhClmDkvGwHlUlzyHHr4ELaQnPow">
+                        <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Unreal Engine VR Game</h3>
+                        <p>A game made as part of my final project for obtaining my Game Development Certificate. 
+                        This game was developed in a group of 4, and I was chosen to be the leader by the professor 
+                        of the course. Our objective was to create a VR cooking simulator, to teach young kids 
+                        how to cook without the hazards of a real kitchen</p>
+                        <a href="https://youtu.be/zm6oqzt3iTA?si=e5UZJjuyRPPaLZYw"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Godot 2D Game</h3>
+                        <p>My submission for the 2024 Pixel Game Jam. I entered the 2024 Pixel Jam to get the 
+                        opportunity to use a game engine that I had never used before, which was Godot. The 
+                        purpose of the game jam is to make a fully functioning game in 9 days with an "aqua" 
+                        game theme</p>
+                        <a href="https://www.linkedin.com/posts/faridsawaqed-06s_this-is-the-game-that-earned-me-a-good-placement-activity-7249780734444343297-Sfjj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADdrRBIBhClmDkvGwHlUlzyHHr4ELaQnPow">
+                        <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-4.png">
+                    <div class="layer">
+                        <h3>UI Design in Figma</h3>
+                        <p>A design for a mobile application created as a final project for Human Computer 
+                        Interactions course. I implemented this application using Figma, setting a great 
+                        work flow for the user and creating animation transitions for a smooth feeling.</p>
+                        <a href="https://youtu.be/uEzp5UL1R7A"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--    <a href="#" class="btn">See more</a>    -->
+        </div>
+    </div>
+
+    <!-- -----------contact----------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> faridsawaqed@yahoo.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (201) 736 - 0842</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/farid.sawaged"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@FaridSawaqed"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@sketchingsilver?_t=8pLGLI0oJpO&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/FaridSawaqed-06s/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+     </div>
+
+    <!-- Handles the text in about when the user switches between hobbies, skills, experience and education -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx0gBvuCV9OWKPpviNBHjRcMGZjmZ_o0Nai1UjTZFUkHbIPsjDzPWNHs3XPmma5x04m/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your message has been sent successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
